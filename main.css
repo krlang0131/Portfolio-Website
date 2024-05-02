@@ -53,7 +53,6 @@ header h1 {
     justify-content: center;
 }
 .featured-portfolio img {
-    border: 2px solid black;
     border-radius: 10px;
     width: 322px;
     margin: 30px;
@@ -73,7 +72,6 @@ header h1 {
 
 }
 .portfolio img {
-    border: 2px solid black;
     border-radius: 10px;
     width: 322px;
     margin: 30px;
@@ -83,8 +81,72 @@ header h1 {
 .portfolio p {
     text-align: center;
 }
+/* portfolio-pages */
+.description {
+    text-align: center;
+}
+.header {
+    text-align: center;
+}
+.portfolio-body{
+    margin-left: 400px;
+    margin-right: 400px;
+}
+/* portfolio-bizarro-branding */
+.bizarro1-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.bizarro1-2 img {
+    margin: 50px;
+    display: block;
+    height: auto;
+}
 
+/* to standardize heights: 
+   ((width-a / (width-a + width-b)) * 100%) - (margin-left + margin-right)
+*/
+.bizarro1 {
+    width: calc((100% - 55.56%) - 100px);
+    /* width: 30px; */
+    /* margin: 50px; */
+}
+.bizarro2 {
+    width: calc(55.56% - 100px);
+    /* width: 60%;
+    margin: 50px; */
+}
+.bizarro3-4 {
+    display: flex;
+    flex-direction: row;
+}
+.bizarro3 {
+    width: calc(50% - 100px);
+    margin: 50px;
+}
+.bizarro4 {
+    width: calc(50% - 100px);
+    margin: 50px;
+}
+.bizarro5 {
+    width: 100%;
+}
 
+/* portfolio-zine */
+.zine-intro {
+    display: flex;
+    flex-direction: row;
+}
+.zine1 {
+width: 30%;
+margin: 50px;
+margin-top: 0px;
+}
+.zine2 {
+    width: 100%;
+}
 
 /* footer */
 footer {
