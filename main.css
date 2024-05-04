@@ -1,3 +1,6 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
 /* header */
 header {
     background-color: #000A60;
@@ -93,42 +96,36 @@ header h1 {
     margin-right: 400px;
 }
 /* portfolio-bizarro-branding */
-.bizarro1-2 {
+.bizarro {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: stretch;
 }
-.bizarro1-2 img {
+.bizarro div {
+    flex-basis: 0px;
+    flex-shrink: 1;
     margin: 50px;
+}
+.bizarro img {
     display: block;
     height: auto;
+    width: 100%;
 }
 
+.bizarro1 {
+    flex-grow: calc(1560/1042);
+}
 /* to standardize heights: 
    ((width-a / (width-a + width-b)) * 100%) - (margin-left + margin-right)
 */
-.bizarro1 {
-    width: calc((100% - 55.56%) - 100px);
-    /* width: 30px; */
-    /* margin: 50px; */
-}
 .bizarro2 {
-    width: calc(55.56% - 100px);
-    /* width: 60%;
-    margin: 50px; */
+    flex-grow: calc(9000/4800);
 }
-.bizarro3-4 {
-    display: flex;
-    flex-direction: row;
-}
+
 .bizarro3 {
-    width: calc(50% - 100px);
-    margin: 50px;
+    flex-grow: calc(6720/4248);
 }
 .bizarro4 {
-    width: calc(50% - 100px);
-    margin: 50px;
+    flex-grow: calc(935/569);
 }
 .bizarro5 {
     width: 100%;
