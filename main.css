@@ -85,9 +85,9 @@ header h1 {
     text-align: center;
 }
 /* portfolio-pages */
-.description {
+/* .description {
     text-align: center;
-}
+} */
 .header {
     text-align: center;
 }
@@ -96,9 +96,53 @@ header h1 {
     margin-right: 400px;
 }
 /* portfolio-bizarro-branding */
+.milestones1 {
+    text-align: center;
+}
+.milestones2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.milestones2 p {
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+}
+.arrow {
+    width: 30px;
+}
+.dunkin1 {
+    text-align: center;
+}
+.dunkin1 img {
+    width: 50%;
+}
+.dunkin2 {
+    flex-grow: calc(310/163)
+}
+.dunkin3 {
+    flex-grow: calc(325/155)
+}
+.dunkin4 {
+    flex-grow: calc(404/316);
+}
+.dunkin5 {
+    flex-grow: calc(644/418);
+}
+
+.ads {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .bizarro {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .bizarro div {
     flex-basis: 0px;
@@ -114,13 +158,9 @@ header h1 {
 .bizarro1 {
     flex-grow: calc(1560/1042);
 }
-/* to standardize heights: 
-   ((width-a / (width-a + width-b)) * 100%) - (margin-left + margin-right)
-*/
 .bizarro2 {
     flex-grow: calc(9000/4800);
 }
-
 .bizarro3 {
     flex-grow: calc(6720/4248);
 }
@@ -144,7 +184,30 @@ margin-top: 0px;
 .zine2 {
     width: 100%;
 }
-
+/* art auction app */
+.art-app1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.intro-img {
+    width:50%;
+    margin: 20px;
+}
+.art-app1 img {
+    width: 100%;
+}
+.overview {
+    display: flex;
+    flex-direction: row;
+}
+.overview div {
+    margin: 20px;
+    text-align: left;
+}
+.design-process {
+    width: 100%;
+}
 /* footer */
 footer {
     background-color: #000A60;
