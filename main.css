@@ -96,6 +96,14 @@ header h1 {
     margin-right: 400px;
 }
 /* portfolio-bizarro-branding */
+.bizarro-intro {
+    display: flex;
+    flex-direction: row;
+}
+.bizarro-intro img {
+    width: 100%;
+    border-radius: 10px;
+}
 .milestones1 {
     text-align: center;
 }
@@ -132,12 +140,45 @@ header h1 {
 .dunkin5 {
     flex-grow: calc(644/418);
 }
-
 .ads {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+}
+.ads div {
+    /* flex-basis: 0px; */
+    flex-shrink: 1;
+    margin: 10px;
+}
+.ads img {
+    /* display: block; */
+    height: auto;
+    width: 100%;
+}
+.ad1 {
+    flex-grow: calc(357/200); 
+}
+.ad2 {
+    flex-grow: calc(400/200);
+}
+.ad3 {
+    flex-grow: calc(357/200);
+}
+.ad4 {
+    flex-grow: calc(389/200);
+}
+.ad5 {
+    flex-grow: calc(356/200);
+}
+.ad6 {
+    flex-grow: calc(356/200);
+}
+.ad7 {
+    flex-grow: calc(300/388);
+}
+.ad8 {
+    flex-grow: calc(178/454);
 }
 .bizarro {
     display: flex;
