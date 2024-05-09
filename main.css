@@ -1,6 +1,14 @@
 *, *:before, *:after {
     box-sizing: border-box;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+  }
+
 /* header */
 header {
     background-color: #000A60;
@@ -8,6 +16,7 @@ header {
     height: 100px; 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .tabs {
     display: flex;
@@ -15,6 +24,12 @@ header {
     align-items: flex-end;
 
 }
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
 header li {
     padding: 0 40px;
     color: white; 
@@ -23,28 +38,28 @@ header li {
     text-decoration-color: none;
     font-size: 20px;
 }
-header ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
+
+header a {
+    color: inherit;
+    display: inline-block;
 }
-header li:hover{
-    font-size: 22px;
+header a:hover{
+    transform: scale(1.1);
 }
 .page-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-
+   padding-right: 300px;
 }
+
 header h1 {
     color: white;
 }
+
 
 /* home image */
 .home-img {
     background-image: url("");
 }
+
 
 /* home featured section */
 #featured h2 {
@@ -59,42 +74,73 @@ header h1 {
     border-radius: 10px;
     width: 322px;
     margin: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .featured-portfolio p {
     text-align: center;
 }
-.featured-portfolio img:hover {
-    width: 330px;
+.featured-portfolio a {
+    text-decoration: none;
+    color: black;
 }
+.featured-portfolio > div:hover {
+    transform: scale(1.1);
+}
+
+
+/* about page */
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+
+}
+.skills li {
+    margin-right: 50px;    
+}
+.skills img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+
+}
+
+
 /* portfolio page */
 .portfolio {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 .portfolio img {
     border-radius: 10px;
     width: 322px;
     margin: 30px;
-    margin-bottom: 10px;
-
+    margin-bottom: 0px;
 }
 .portfolio p {
     text-align: center;
+    text-decoration: none;
 }
+.portfolio > div:hover {
+    transform: scale(1.1);
+}
+
+/* contact page */
+
+
 /* portfolio-pages */
-/* .description {
-    text-align: center;
-} */
 .header {
     text-align: center;
 }
-.portfolio-body{
+.info-body{
     margin-left: 400px;
     margin-right: 400px;
 }
+
+
 /* portfolio-bizarro-branding */
 .bizarro-intro {
     display: flex;
@@ -212,19 +258,22 @@ header h1 {
     width: 100%;
 }
 
+
 /* portfolio-zine */
 .zine-intro {
     display: flex;
     flex-direction: row;
 }
 .zine1 {
-width: 30%;
+width: 75%;
 margin: 50px;
 margin-top: 0px;
 }
 .zine2 {
     width: 100%;
 }
+
+
 /* art auction app */
 .art-app1 {
     display: flex;
@@ -249,8 +298,30 @@ margin-top: 0px;
 .design-process {
     width: 100%;
 }
+.persona {
+    display: flex;
+    flex-direction: row;
+}
+.paper-wireframe {
+    width: 75%;
+}
+
 /* footer */
 footer {
     background-color: #000A60;
-    height: 150px;
+    /* height: 150px; */
+    color: white;
+    margin-top: auto;
+    padding: 50px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li {
+    margin: 10px;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
 }
