@@ -17,6 +17,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+
 }
 .tabs {
     display: flex;
@@ -47,6 +49,7 @@ header a:hover{
     transform: scale(1.1);
 }
 .page-header {
+    align-items: flex-end;
    padding-right: 300px;
 }
 
