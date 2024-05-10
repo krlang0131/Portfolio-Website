@@ -175,7 +175,7 @@ header h1 {
     padding: 5px;
     margin: 5px;
 }
-.arrow {
+#arrow {
     width: 30px;
 }
 .dunkin1 {
@@ -312,10 +312,15 @@ margin-top: 0px;
     display: flex;
     flex-direction: row;
 }
+/* .persona img {
+    width: 100%;
+}
 .paper-wireframe {
     width: 75%;
+} */
+.description img {
+    width: 100%;
 }
-
 
 /* steel stacks */
 .photos {
