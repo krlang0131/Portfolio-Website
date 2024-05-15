@@ -250,7 +250,7 @@ header h1 {
 
 /* home image */
 .home-img {
-    background-image: url("images/cover2.jpg");
+    background-image: url("images/cover-matte.jpg");
     background-size: cover;
     height: 700px;
     /* background-color: rgb(196, 196, 196);
@@ -374,6 +374,7 @@ header h1 {
 .portrait img {
     border-radius: 50%;
     width: 50%;
+    height: auto;
     margin: 50px;
     border: black solid;
 }
