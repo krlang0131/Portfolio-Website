@@ -383,6 +383,7 @@ header h1 {
     list-style-type: none;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 .skills li {
     margin-right: 50px;   
@@ -393,7 +394,15 @@ header h1 {
     height: 20px;
     margin-right: 5px;
 }
-
+.contact {
+    margin-bottom: 100px;
+}
+.contact .email {
+    margin-left: 50px;
+}
+.contact .linkedin {
+    margin-left: 50px;
+}
 /* portfolio page */
 .portfolio {
     display: flex;
@@ -608,15 +617,26 @@ margin-top: 0px;
     display: flex;
     flex-direction: row;
 }
-/* .persona img {
-    width: 100%;
-}
-.paper-wireframe {
+.persona img {
     width: 75%;
-} */
+    border: black solid;
+}
+
 .description img {
     width: 100%;
 }
+.wireframes {
+    display: flex;
+    flex-direction: row;
+}
+.wireframes p {
+    margin-left: 50px;
+}
+.digital-wireframes {
+    width: 50%;
+}
+
+
 
 /* steel stacks */
 .photos {
