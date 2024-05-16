@@ -185,15 +185,7 @@ p {
   }
 
 
- /* <uniquifier>: Use a unique and descriptive class name
- <weight>: Use a value from 200 to 700 */
-  
-/* .oswald- {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }   */
+
 /* header */
 header {
     background-color: #000A60;
@@ -203,20 +195,17 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-
 }
 .tabs {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-
 }
 header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
-
 header li {
     padding: 0 40px;
     color: white;
@@ -230,7 +219,6 @@ header li {
     font-variation-settings:
       "wdth" 100;
 }
-
 header a {
     color: inherit;
     display: inline-block;
@@ -242,7 +230,6 @@ header a:hover{
     align-items: flex-end;
    padding-right: 300px;
 }
-
 header h1 {
     color: white;
 }
@@ -282,7 +269,6 @@ header h1 {
       "wdth" 75;
     font-size: 2rem;
     margin: 20px;
-
 }
 .home-img P {
     margin: 0;
@@ -296,12 +282,12 @@ header h1 {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-
 }
 .featured-portfolio {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
 }
 .featured-portfolio img {
@@ -345,7 +331,8 @@ header h1 {
     margin-bottom: 50px;
     background-image: url("images/dose-media-bU6JyhSI6zo-unsplash.jpg");
     background-size: cover;
-    height: 500px;
+    min-height: 300px;
+    max-height: 500px;
 }
 .about-intro h2 {
     margin-top: 50px;
@@ -356,16 +343,11 @@ header h1 {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-      font-size: 2rem;
+    font-size: 2rem;
 }
 .about-intro p {
     margin-left: 400px;
-    /* font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100; */
+    line-height: 2rem;
 }
 .portrait {
     display: flex;
@@ -377,6 +359,7 @@ header h1 {
     height: auto;
     margin: 50px;
     border: black solid;
+    aspect-ratio: 1;
 }
 .skills ul {
     display: flex;
@@ -404,11 +387,15 @@ header h1 {
 .contact .linkedin {
     margin-left: 50px;
 }
+
+
+
 /* portfolio page */
 .portfolio {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 .portfolio img {
@@ -444,8 +431,6 @@ header h1 {
 }
 
 
-/* contact page */
-
 
 /* portfolio-pages */
 .header {
@@ -461,6 +446,9 @@ header h1 {
 .bizarro-intro {
     display: flex;
     flex-direction: row;
+}
+.bizarro-intro div {
+    margin-right: 30px;
 }
 .bizarro-intro img {
     width: 100%;
@@ -587,6 +575,7 @@ margin-top: 0px;
 }
 .zine2 {
     width: 100%;
+    margin-bottom: 100px;
 }
 
 
