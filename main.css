@@ -440,6 +440,27 @@ header h1 {
     margin-left: 400px;
     margin-right: 400px;
 }
+.arrow-connections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.back, .next {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.back img, .next img {
+    height: 20px;
+    margin: 5px;
+
+}
+.back a, .next a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /* portfolio-bizarro-branding */
@@ -560,6 +581,7 @@ header h1 {
 }
 .bizarro5 {
     width: 100%;
+
 }
 
 
