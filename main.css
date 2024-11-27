@@ -197,7 +197,7 @@ header {
     align-items: flex-end;
 }
 #logo {
-    width: 50%;
+    width: 75%;
 
 }
 .tabs {
@@ -254,7 +254,7 @@ header h1 {
     color: white;
 }
 .home-img h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 2px;
     text-align: center;
     font-family: "Ubuntu Sans", sans-serif;
@@ -390,6 +390,10 @@ header h1 {
         width: 70%;
         padding-bottom: 70%; /* Maintain 1:1 aspect ratio */
     }
+}
+
+.skills {
+    margin-top: 50px;
 }
 .skills ul {
     display: flex;
