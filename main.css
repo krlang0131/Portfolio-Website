@@ -188,7 +188,7 @@ p {
 
 /* header */
 header {
-    background-color: #000A60;
+    background-color: #002147;
     margin: 0px;
     height: 100px; 
     display: flex;
@@ -721,7 +721,7 @@ margin-top: 0px;
 
 /* footer */
 footer {
-    background-color: #000A60;
+    background-color: #002147;
     color: white;
     margin-top: auto;
     padding: 50px;
