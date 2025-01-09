@@ -15,6 +15,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    font-size: 2rem;
   }
   h2 {
     font-family: "Ubuntu Sans", sans-serif;
@@ -23,19 +24,21 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    font-size: 1.75rem;
   }
 h3 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    font-size: 1.25rem;
 }
 h4 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
@@ -48,6 +51,7 @@ p {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    font-size: 1rem;
 }
 
 /* fonts */
@@ -471,8 +475,8 @@ header h1 {
     text-align: center;
 }
 .info-body{
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .arrow-connections {
     display: flex;
@@ -516,15 +520,16 @@ header h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 50px;
+    align-items: center;
+    margin-bottom: 100px;
 }
 .milestones2 p {
-    background-color: lightgray;
     padding: 5px;
     margin: 5px;
 }
 #arrow {
-    width: 30px;
+    width: 20px;
+    height: 20px;
 }
 .dunkin2 {
     flex-grow: calc(310/163)
@@ -633,11 +638,17 @@ margin-top: 0px;
 .art-app1 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
 }
 .intro-img {
-    width:50%;
-    margin: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+.intro-img img {
+    width: 100%;
+    height: auto;
 }
 .art-app1 img {
     width: 100%;
@@ -656,18 +667,24 @@ margin-top: 0px;
 .persona {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-.persona img {
-    width: 75%;
+.persona-img {
+    width: 100%;
+    margin-left: 100px;
+}
+.persona-img img {
+    width: 100%;
+    height: auto;
     border: black solid;
 }
 
 .wireframes {
     display: flex;
     flex-direction: row;
-}
-.wireframes p {
-    margin-left: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .digital-wireframes {
     width: 50%;
@@ -677,20 +694,27 @@ margin-top: 0px;
 .usability-study {
     width: 100%
 }
-.mockups {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
+
 .mockup-img {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 45%;
-    margin: 0px 100px 0px 100px;
+    align-items: center;
+}
+.mockup-img img {
+    width: 50%;
+    height: auto;
+}
+.digital-wireframes {
+    width: 100%;
+    margin-left: 100px;
 }
 .paper-wireframes {
     width: 100%;
+    margin-right: 100px;
+}
+.digital-wireframes img, .paper-wireframes img {
+    width: 100%;
+    height: auto;
 }
 .centered-img100 {
     width: 100%;
