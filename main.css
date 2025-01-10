@@ -635,10 +635,9 @@ margin-top: 0px;
 
 
 /* art auction app */
-.art-app1 {
+.intro-info {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     flex-wrap: nowrap;
     margin-bottom: 50px;
 }
@@ -708,11 +707,15 @@ margin-top: 0px;
     width: 100%;
     margin-left: 100px;
 }
-.paper-wireframes {
+.wireframe_img-left {
     width: 100%;
     margin-right: 100px;
 }
-.digital-wireframes img, .paper-wireframes img {
+.wireframe_img-right {
+    width: 100%;
+    margin-left: 100px;
+}
+.wireframe_img-left img, .wireframe_img-right img {
     width: 100%;
     height: auto;
 }
