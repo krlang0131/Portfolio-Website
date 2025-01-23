@@ -632,7 +632,27 @@ margin-top: 0px;
     width: 100%;
     margin-bottom: 100px;
 }
-
+.splide__slide img {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+  }
+  /* .splide { */
+    /* visibility: visible !important; */
+    /* display: block !important; */
+    /* opacity: 1 !important; */
+  /* }
+  
+  .splide__track {
+    visibility: visible !important;
+  }
+  .splide__list {
+    visibility: visible !important;
+  }
+  .splide__slide {
+    visibility: visible !important;
+  }
+   */
 
 /* art auction app */
 .intro-info {
