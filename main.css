@@ -2,57 +2,6 @@
     box-sizing: border-box;
   }
 
-  body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    min-height: 100vh;
-  }
-  h1 {
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    font-size: 2rem;
-  }
-  h2 {
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    font-size: 1.75rem;
-  }
-h3 {
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    font-size: 1.25rem;
-}
-h4 {
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-
-}
-p {
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    font-size: 1rem;
-}
 
 /* fonts */
  /* <uniquifier>: Use a unique and descriptive class name
@@ -187,6 +136,57 @@ p {
     font-variation-settings:
       "wdth" 100;
   }
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+  }
+  body h1 {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 2rem;
+  }
+ body h2 {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.5rem;
+  }
+body h3 {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.25rem;
+}
+body h4 {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+body p {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1rem;
+}
 
 
 
@@ -279,7 +279,7 @@ header h1 {
     font-size: 2rem;
     margin: 20px;
 }
-.home-img P {
+.home-img p {
     margin: 0;
 }
 /* home featured section */
@@ -303,6 +303,7 @@ header h1 {
     width: 322px;
     margin: 30px;
     margin-bottom: 0px;
+    border-radius: 10px;
 }
 .featured-portfolio p {
     color: grey;
@@ -344,7 +345,7 @@ header h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 400px;
+    margin: 50px 200px;
 }
 
 .about-intro div {
@@ -392,7 +393,7 @@ header h1 {
 
     .portrait {
         width: 70%;
-        padding-bottom: 70%; /* Maintain 1:1 aspect ratio */
+        padding-bottom: 70%;
     }
 }
 
@@ -409,7 +410,15 @@ header h1 {
 }
 .skills li {
     margin-right: 50px;   
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1rem;
+ 
 }
 .skills img{
     width: 20px;
@@ -432,14 +441,17 @@ header h1 {
 .portfolio {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:flex-start;
     flex-wrap: wrap;
+    margin-left: 6rem;
+    margin-right: 6rem;
     
 }
 .portfolio img {
     width: 322px;
     margin: 30px;
     margin-bottom: 0px;
+    border-radius: 10px;
 }
 .portfolio p {
     color: grey;
@@ -635,26 +647,10 @@ margin-top: 0px;
 .splide__slide img {
     width: 100%;
     height: auto;
-    /* object-fit: cover; */
+    padding: 20px;
   }
-  /* .splide { */
-    /* visibility: visible !important; */
-    /* display: block !important; */
-    /* opacity: 1 !important; */
-  /* }
-  
-  .splide__track {
-    visibility: visible !important;
-  }
-  .splide__list {
-    visibility: visible !important;
-  }
-  .splide__slide {
-    visibility: visible !important;
-  }
-   */
 
-/* art auction app */
+/* template */
 .intro-info {
     display: flex;
     flex-direction: row;
@@ -662,13 +658,17 @@ margin-top: 0px;
     margin-bottom: 50px;
 }
 .intro-img {
-    width: 50%;
-    margin-left: 100px;
+    height: 300px;
+    max-height: 300px;
+    width:auto;
+    margin-left: 50px;
 }
 .intro-img img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
 }
+
+/* art auction app */
 .art-app1 img {
     width: 100%;
 }
@@ -764,6 +764,54 @@ margin-top: 0px;
 }
 .vertical {
     width: 50%;
+}
+
+/* The Dent Guys portfolio page*/
+.full_home_page img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.full_home_page {
+    padding-bottom: 100px;
+}
+.splide-container {
+    padding: 2rem;
+    background-color: #ECECEC;
+    border-radius: 20px;
+}
+.splide-container-container {
+    margin: 8rem;
+
+}
+.dent_guys-before-after {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 100px;
+
+}
+.dent_guys-before, .dent_guys-after {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dent_guys-before img, .dent_guys-after img {
+    width: 100%;
+    height: auto;
+}
+.dent_guys-ads {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.dent_guys-ads img {
+   max-height: 250px;
+   width: auto;
+   border: 1px solid black;
 }
 
 /* footer */
