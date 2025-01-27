@@ -765,7 +765,28 @@ margin-top: 0px;
 .vertical {
     width: 50%;
 }
-
+/* Family Calendar */
+.family_calendar-competitive_audit img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+}
+.family_calendar-mockup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 100px;
+}
+.family_calendar-mockup img {
+    width: 100%;
+    height: auto;
+}
+.family_calendar-full_mockup img {
+    width: 100%;
+    height: auto;
+}
 /* The Dent Guys portfolio page*/
 .dent_guys-designs {
     display: flex;
