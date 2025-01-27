@@ -634,14 +634,16 @@ header h1 {
 .zine-intro {
     display: flex;
     flex-direction: row;
+    gap: 100px;
+    margin-bottom: 50px;
 }
 .zine1 {
 width: 75%;
-margin: 50px;
-margin-top: 0px;
+height:auto;
 }
-.zine2 {
+.zine2 img {
     width: 100%;
+    height: auto;
     margin-bottom: 100px;
 }
 .splide__slide img {
