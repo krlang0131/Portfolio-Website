@@ -767,6 +767,19 @@ margin-top: 0px;
 }
 
 /* The Dent Guys portfolio page*/
+.dent_guys-designs {
+    display: flex;
+    flex-direction: row;
+}
+.dent_guys-wireframes img, .dent_guys-mockup img {
+    width: 75%;
+    height: auto;
+    justify-content: center;
+}
+.dent_guys-wireframes, .dent_guys-mockup {
+    display: flex;
+    flex-direction: column;
+}
 .full_home_page img {
     width: 100%;
     height: auto;
