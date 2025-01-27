@@ -770,6 +770,7 @@ margin-top: 0px;
 .dent_guys-designs {
     display: flex;
     flex-direction: row;
+    margin-bottom: 8rem;
 }
 .dent_guys-wireframes img, .dent_guys-mockup img {
     width: 75%;
@@ -794,8 +795,7 @@ margin-top: 0px;
     border-radius: 20px;
 }
 .splide-container-container {
-    margin: 8rem;
-
+    margin: 4rem 8rem 8rem 8rem;
 }
 .dent_guys-before-after {
     display: flex;
