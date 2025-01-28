@@ -426,13 +426,19 @@ header h1 {
     margin-right: 5px;
 }
 .contact {
+    margin-left: 50px;
     margin-bottom: 100px;
 }
-.contact .email {
-    margin-left: 50px;
-}
 .contact .linkedin {
-    margin-left: 50px;
+    padding-bottom: 50px;
+}
+.contact a {
+    font-family: "Ubuntu Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 
@@ -449,6 +455,7 @@ header h1 {
 }
 .portfolio img {
     width: 322px;
+    max-height: 215px;
     margin: 30px;
     margin-bottom: 0px;
     border-radius: 10px;
@@ -859,6 +866,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
 
 }
 footer ul {
@@ -871,7 +879,7 @@ footer li {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-    margin: 10px;
+    margin: 20px;
 }
 
 footer a {
