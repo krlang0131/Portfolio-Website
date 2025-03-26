@@ -199,9 +199,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #logo {
-    width: 75%;
+    width: 100%;
 
 }
 .tabs {
@@ -218,7 +222,7 @@ header ul {
 header li {
     padding: 0 40px;
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     text-decoration-color: none;
     font-size: 20px;    
     font-family: "Ubuntu Sans", sans-serif;
@@ -227,12 +231,14 @@ header li {
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+      transition: 200ms;
 }
 header a {
     color: inherit;
     display: inline-block;
 }
 header a:hover{
+    text-decoration: none;
     transform: scale(1.1);
 }
 .page-header {
@@ -282,6 +288,27 @@ header h1 {
 .home-img p {
     margin: 0;
 }
+
+/* Home Services section */
+.services-container {
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    padding-left: 10%;
+}
+.services-li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.service img {
+    height: 40px;
+    width: auto;
+}
+
 /* home featured section */
 #featured h1 {
     text-align: center;
