@@ -136,6 +136,14 @@
     font-variation-settings:
       "wdth" 100;
   }
+  .italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
   body {
     display: flex;
     flex-direction: column;
@@ -143,6 +151,11 @@
     min-height: 100vh;
   }
   body h1 {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  body h2 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -151,7 +164,7 @@
       "wdth" 100;
     font-size: 2rem;
   }
- body h2 {
+ body h3 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -160,7 +173,7 @@
       "wdth" 100;
     font-size: 1.5rem;
   }
-body h3 {
+body h4 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -169,7 +182,7 @@ body h3 {
       "wdth" 100;
     font-size: 1.25rem;
 }
-body h4 {
+body h5 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -253,7 +266,7 @@ header a:hover{
     align-items: flex-end;
    padding-right: 300px;
 }
-header h1 {
+header h2 {
     color: white;
 }
 
@@ -272,25 +285,21 @@ header h1 {
     color: white;
 }
 .home-img h1 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     margin: 2px;
     text-align: center;
-    font-family: "Ubuntu Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-
 }
-.home-img h2 {
+.home-img h3 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: italic;
     font-variation-settings:
       "wdth" 75;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 20px;
 }
 .home-img p {
@@ -318,7 +327,7 @@ header h1 {
 }
 
 /* home featured section */
-#featured h1 {
+#featured h2 {
     text-align: center;
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
@@ -347,7 +356,7 @@ header h1 {
     margin-right: 30px;
     margin-bottom: 5px;
 }
-.featured-portfolio h2 {
+.featured-portfolio h3 {
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
@@ -380,14 +389,14 @@ header h1 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 2% 15%;
 }
 
 .about-intro div {
     flex: 1;
 }
 
-.about-intro h2 {
+.about-intro h3 {
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -421,7 +430,7 @@ header h1 {
         text-align: center;
     }
 
-    .about-intro h2,
+    .about-intro h3,
     .about-intro p {
         margin-left: 0;
     }
@@ -439,9 +448,9 @@ header h1 {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    column-gap: 50px;
 }
 .skills li {
-    margin-right: 50px;   
     margin-bottom: 20px;
     font-family: "Ubuntu Sans", sans-serif;
     font-optical-sizing: auto;
@@ -450,12 +459,18 @@ header h1 {
     font-variation-settings:
       "wdth" 100;
     font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
  
 }
 .skills img{
     width: 20px;
     height: 20px;
     margin-right: 5px;
+}
+.skills h3{
+    text-align: center;
 }
 .contact-container {
     text-align: center;
@@ -524,7 +539,7 @@ header h1 {
     margin-right: 30px;
     margin-bottom: 5px;
 }
-.portfolio h2 {
+.portfolio h3 {
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
