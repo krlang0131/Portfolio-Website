@@ -988,6 +988,17 @@ border-radius: 20px;
    border: 1px solid black;
 }
 
+/* stride security page */
+.research_logos {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.research_logos img {
+    height: 30px;
+    width: auto;
+}
+
 /* footer */
 footer {
     background-color: #002147;
