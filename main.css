@@ -574,13 +574,13 @@ header h2 {
 .header {
     text-align: center;
     background-color: #ecf5f8;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .info-body{
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 .info-body li {
@@ -602,11 +602,8 @@ header h2 {
 .info-img {
     text-align: center;
 }
-.info-container p {
-    padding-right: 20%;
-}
 .corner img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .border img {
     border: solid 1px black;
@@ -618,15 +615,23 @@ header h2 {
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 50px;
-    gap: 50px;
+    gap: 100px;
 }
 .intro {
     width: 50%;
+
+}
+.intro img {
+    width: 100%;
+}
+.intro-img {
+    display: flex;
+    justify-content: center;
 }
 .intro-img img {
-    width: 100%;
+    width: 75%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .arrow-connections {
     display: flex;
@@ -926,6 +931,7 @@ border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 50px;
 
 }
 .dent_guys-wireframes p {
