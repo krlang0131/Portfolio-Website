@@ -653,6 +653,17 @@ header h2 {
     text-decoration: none;
     color: inherit;
 }
+.li-indent {
+    padding-left: 15px;
+    margin-top: 0;
+}
+.bottom-margin {
+    margin-bottom: 5px;
+}
+.bullets li{
+    list-style-type: circle;
+    padding-bottom: 5px;
+}
 
 
 /* portfolio-bizarro-branding */
