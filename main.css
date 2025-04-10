@@ -831,12 +831,12 @@ border-radius: 20px;
 }
 .persona-img {
     width: 100%;
+    height: auto;
     margin-left: 100px;
 }
 .persona-img img {
     width: 100%;
     height: auto;
-    border: black solid;
 }
 
 .wireframes {
@@ -916,7 +916,7 @@ border-radius: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 4rem;
     gap: 100px;
 }
