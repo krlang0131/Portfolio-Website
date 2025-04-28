@@ -14,7 +14,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">       
-    <meta name="description" content="Digital Photography exibit of the Bethlehem Steel Stacks">
+      <meta name="description" content="Digital Photography exibit of the Bethlehem Steel Stacks">
+      <script src="script.js"></script>       
+
     </head>
     <body>
 
@@ -29,6 +31,20 @@
           <li><a href="portfolio.html">Portfolio</a></li>
         </ul>
       </div>
+                 <!-- Hamburger for Mobile -->
+        <div class="hamburger" onclick="openMenu()">☰</div>
+
+        <!-- Overlay Background -->
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+
     </header>
         <div class="header">
           <h2>Steel Stacks</h2>
@@ -94,6 +110,6 @@
           </div>
 
       </footer>
-
+      <script src="script.js"></script>
     </body>
 </html>

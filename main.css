@@ -250,10 +250,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 100px;
+    position: relative;
 }
 #logo {
     height: 100%;
@@ -263,18 +261,20 @@ header {
 .tabs {
     display: flex;
     flex-direction: row;
+    justify-content: end;
 }
 header ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    justify-content: end;
     align-items: flex-end;
     text-decoration: none;
+    gap: 60px;    
 
 
 }
 header li {
-    padding: 0 40px;
     color: white;
     text-decoration: none;
     text-decoration-color: none;
@@ -305,15 +305,90 @@ header a:hover{
 header h2 {
     color: white;
 }
+/* Hamburger (Hidden on desktop/tablet) */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+  }
+  
+  /* Side Menu */
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    z-index: 1001;
+    overflow-x: hidden;
+    transition: 0.3s ease;
+    padding-top: 60px;    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+      transition: 200ms;
+      list-style-type: none;
 
+  }
+  
+  .side-menu a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .side-menu a:hover {
+    background-color: #575757;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Overlay background when menu is open */
+  .overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .header ul {
+      gap: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .tabs {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
 
 /* home image */
 .home-img {
     background-image: url("images/cover-matte.jpg");
     background-size: cover;
     height: 700px;
-    /* background-color: rgb(196, 196, 196);
-    background-blend-mode: multiply; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -354,8 +429,8 @@ header h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    align-items: start;
+    gap: 10px;
 }
 .service img {
     height: 40px;
@@ -399,7 +474,44 @@ header h2 {
 .featured-portfolio > div:hover {
     transform: scale(1.1);
 }
-
+@media (max-width: 768px) {
+    /* Home image section */
+    .home-img {
+      height: 500px; /* shorter hero section */
+      padding: 20px;
+    }
+    .home-img h1 {
+      font-size: 3rem; /* smaller heading */
+    }
+    .home-img h3 {
+      font-size: 1.8rem;
+    }
+  
+    /* Services section */
+    .services-li {
+      flex-direction: column; /* stack vertically */
+      gap: 20px; /* smaller gap */
+    }
+    .services-container {
+      padding: 20px; /* less side padding */
+    }
+  
+    /* Featured portfolio */
+    .featured-portfolio img {
+      width: 90%; /* flexible width for small screens */
+      max-width: 300px;
+      margin: 15px auto 0 auto;
+    }
+    .featured-portfolio p,
+    .featured-portfolio h3 {
+      margin: 10px;
+      text-align: center; /* center text */
+    }
+    .service p {
+        padding: 0 50px;
+    }
+  }
+  
 
 /* about page */
 .about-intro {
@@ -443,23 +555,6 @@ header h2 {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
-}
-
-@media (max-width: 768px) {
-    .about-intro {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-intro h3,
-    .about-intro p {
-        margin-left: 0;
-    }
-
-    .portrait {
-        width: 70%;
-        padding-bottom: 70%;
-    }
 }
 
 .skills ul {
@@ -530,7 +625,69 @@ header h2 {
     text-decoration-color: none;
     color:black;
 }
+@media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .about-text, .about-photo {
+      width: 100%;
+      text-align: center;
+    }
+    .about-photo img {
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+      margin: 20px 0;
+    }
+    .about-text {
+      padding: 10px;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
+@media (max-width: 768px) {
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .about-intro h3,
+    .about-intro p {
+        margin-left: 0;
+    }
+
+    .portrait {
+        width: 70%;
+        padding-bottom: 70%;
+    }
+}
+/* Tablet View (up to 768px) */
+@media (max-width: 768px) {
+    .about-intro-box {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  /* Mobile View (up to 480px) */
+  @media (max-width: 480px) {
+    .about-intro-box {
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+  
 
 /* portfolio page */
 .portfolio {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home Kristina Lang</title>
+        <title>Home</title>
         <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +13,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu+Sans:ital,wdth,wght@0,75..100,100..800;1,75..100,100..800&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">       
-        <meta name="description" content="">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta name="Home" content="">
       </head>
     <body>
       <header>
 
-          <img id="logo" src="images/Logo.png"/>
+        <img id="logo" src="images/Logo.png"/>
 
         <div class="tabs">
           <ul>
@@ -27,6 +27,20 @@
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
+        </div>
+
+           <!-- Hamburger for Mobile -->
+        <div class="hamburger" onclick="openMenu()">☰</div>
+
+        <!-- Overlay Background -->
+        <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+        <!-- Side Menu -->
+        <div id="sideMenu" class="side-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
         </div>
       </header>
 
@@ -42,27 +56,27 @@
           <div class="service">
             <img src="images/digital-design-icon.png" alt="Digital Design icon">
             <h3>Digital Design</h3>
-            <p>Crafting visually compelling graphics, illustrations, and layouts that communicate ideas effectively and enhance brand identity.</p>
+            <p>Creating impactful graphics and layouts that visually communicate your brand's message.</p>
           </div>          
           <div class="service">
             <img src="images/UX-UI_design-icon.png" alt="UX/UI Design icon">
             <h3>UX/UI Design</h3>
-            <p>Designing intuitive and user-friendly digital experiences through research, wireframing, prototyping, and interaction design.</p>
+            <p>Designing intuitive digital experiences through thoughtful research, wireframes, and prototypes.</p>
           </div>
           <div class="service">
             <img src="images/web-design-icon.png" alt="Web Design icon">
             <h3>Web Design</h3>
-            <p>Creating visually appealing and responsive website layouts that align with brand identity and enhance user engagement.</p>
+            <p>Building visually engaging, responsive websites that reflect brand identity and improve usability.</p>
           </div>
           <div class="service">
             <img src="images/code-icon.png" alt="Web Development icon">
             <h3>Web Development</h3>
-            <p>Building responsive, functional, and aesthetically pleasing websites that deliver a smooth and dynamic user experience.</p>
+            <p>Developing functional, dynamic websites that deliver a seamless user experience across devices.</p>
           </div>
           <div class="service">
             <img src="images/brand-icon.png" alt="Branding icon">
             <h3>Branding</h3>
-            <p>Designing cohesive visual identities, including logos, color palettes, and typography to establish a strong brand presence.</p>
+            <p>Crafting cohesive brand identities through logo design, color palettes, and visual style.</p>
           </div>
 
 
@@ -111,6 +125,6 @@
           </div>
 
       </footer>
-
+      <script src="script.js"></script>
     </body>
 </html>

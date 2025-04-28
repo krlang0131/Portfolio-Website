@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu+Sans:ital,wdth,wght@0,75..100,100..800;1,75..100,100..800&display=swap" rel="stylesheet">    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta name="description" content="">
       </head>
     <body>
@@ -26,7 +26,20 @@
             <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </div>
+           <!-- Hamburger for Mobile -->
+           <div class="hamburger" onclick="openMenu()">☰</div>
 
+           <!-- Overlay Background -->
+           <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+   
+           <!-- Side Menu -->
+           <div id="sideMenu" class="side-menu">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+             <a href="index.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="portfolio.html">Portfolio</a>
+           </div>
+   
       </header>
 
       
@@ -125,6 +138,6 @@
           </div>
 
       </footer>
-
+      <script src="script.js"></script>
     </body>
 </html>
