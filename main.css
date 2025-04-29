@@ -190,7 +190,18 @@
     font-weight: 700;
     font-style: normal;
   }
-
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .playfair-display-regular {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 body {
     display: flex;
@@ -199,9 +210,10 @@ body {
     min-height: 100vh;
   }
 h1 {
-    font-family: "Italiana", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal;    
     font-size: clamp(2.5rem, 6vw, 5.5rem); 
   }
   
@@ -242,7 +254,6 @@ h4 {
 header {
     background-color: #002147;
     margin: 0px;
-    /* height: 100px;  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -251,7 +262,7 @@ header {
     position: relative;
 }
 #logo {
-    height: 100%;
+    max-height: 150px;
     width:auto;
 
 }
@@ -399,19 +410,20 @@ header h2 {
     overflow: hidden;
 }
 .home-img h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     font-size: 5.5rem;
     margin: 2px;
     text-align: center;
-    font-family: "Italiana", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 .home-img h3 {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin: 20px;
 }
 .home-img p {
@@ -456,6 +468,9 @@ header h2 {
 .service img {
     height: 40px;
     width: auto;
+}
+.service h3 {
+    color: #002147;
 }
 
 /* home featured section */
@@ -759,7 +774,7 @@ header h2 {
     border-radius: 10px;
 }
 .portfolio p {
-    color: grey;
+    color: #B8860B;
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
@@ -1285,6 +1300,10 @@ footer {
     justify-content: space-between;
     align-items: flex-end;
 
+}
+.footer-logo img{
+    height: 150px;
+    width: auto;
 }
 footer ul {
     list-style-type: none;
