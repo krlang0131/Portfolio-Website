@@ -245,7 +245,7 @@ body p {
 header {
     background-color: #002147;
     margin: 0px;
-    height: 100px; 
+    /* height: 100px;  */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -369,8 +369,11 @@ header h2 {
   
   /* Responsive */
   @media screen and (max-width: 768px) {
-    .header ul {
+    header ul {
       gap: 30px;
+    }
+    header {
+        padding: 10px 50px;
     }
   }
   
@@ -548,14 +551,28 @@ header h2 {
     align-items: center;
     position: relative;
 }
-
 .portrait img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+  }
+  @media (max-width: 480px) {
+    .about-photo img {
+      max-width: 300px;
+    }
+  }
+  
+/* .portrait img {
     width: 75%;
     height: 75%;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
-}
+} */
 
 .skills ul {
     display: flex;
@@ -625,6 +642,9 @@ header h2 {
     text-decoration-color: none;
     color:black;
 }
+.about-intro-mobile {
+    display: none;
+}
 @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
@@ -662,7 +682,12 @@ header h2 {
     .about-intro p {
         margin-left: 0;
     }
-
+    .about-intro-desktop {
+        display: none;
+    }
+    .about-intro-mobile {
+        display: block;
+    }
     .portrait {
         width: 70%;
         padding-bottom: 70%;
@@ -690,13 +715,13 @@ header h2 {
   
 
 /* portfolio page */
-.portfolio {
+/* .portfolio {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
     margin: 5% 5%;
-}
+} */
 .portfolio img {
     width: 322px;
     max-height: 215px;
@@ -724,7 +749,33 @@ header h2 {
     text-decoration: none;
     color: black;
 }
-
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  .project {
+    flex: 1 1 300px;
+    max-width: 320px;
+  }
+  .project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  @media (max-width: 768px) {
+    .portfolio-section {
+      padding: 10px;
+    }
+    .project {
+      flex: 1 1 100%;
+      max-width: 90%;
+    }
+  }
+  
 
 
 /* portfolio-pages */
@@ -1224,3 +1275,9 @@ footer a {
     height: 30px;
     width: auto;
 }
+  /* Mobile View (up to 768px) */
+  @media (max-width: 768px) {
+    footer ul {
+        display: none;
+    }
+  }
