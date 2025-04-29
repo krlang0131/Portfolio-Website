@@ -192,52 +192,49 @@
   }
 
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
   }
-  body h1 {
+h1 {
     font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: clamp(2.5rem, 6vw, 5.5rem); 
   }
-  body h2 {
+  
+h2 {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.5rem;
-  }
- body h3 {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-size: 2rem;
+    font-size: clamp(2rem, 5vw, 3rem);
   }
-body h4 {
+  
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+  
+p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: clamp(.75rem, 2.5vw, 1rem);
+  }
+  
+h4 {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.5rem;
-}
-body h5 {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  }
+  
 
-}
-body p {
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-}
 
 
 
@@ -389,14 +386,17 @@ header h2 {
 
 /* home image */
 .home-img {
+    position: relative;
     background-image: url("images/cover-matte.jpg");
     background-size: cover;
+    background-position: center;
     height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    overflow: hidden;
 }
 .home-img h1 {
     font-size: 5.5rem;
@@ -416,6 +416,24 @@ header h2 {
 }
 .home-img p {
     margin: 0;
+}
+.home-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.home-img h1,
+.home-img h3,
+.home-img p {
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); 
 }
 
 /* Home Services section */
@@ -452,9 +470,9 @@ header h2 {
     margin-bottom: 50px;
 }
 .featured-portfolio img {
-    width: 322px;
-    margin: 30px;
-    margin-bottom: 0px;
+    width: 100%;
+    max-width: 322px;
+    height: auto;
     border-radius: 10px;
 }
 .featured-portfolio p {
@@ -464,6 +482,12 @@ header h2 {
     margin-right: 30px;
     margin-bottom: 5px;
 }
+.featured-portfolio > div {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+  }
+  
 .featured-portfolio h3 {
     text-decoration: none;
     margin-left: 30px;
@@ -477,6 +501,19 @@ header h2 {
 .featured-portfolio > div:hover {
     transform: scale(1.1);
 }
+@media (max-width: 768px) {
+    .featured-portfolio {
+      flex-direction: column;
+      align-items: center;
+    }
+    .featured-portfolio h3 {
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+    }
+    .featured-portfolio p {
+      font-size: clamp(1rem, 3vw, 1.3rem);
+    }
+  }
+  
 @media (max-width: 768px) {
     /* Home image section */
     .home-img {
@@ -715,18 +752,10 @@ header h2 {
   
 
 /* portfolio page */
-/* .portfolio {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
-    margin: 5% 5%;
-} */
+
 .portfolio img {
     width: 322px;
     max-height: 215px;
-    margin: 30px;
-    margin-bottom: 0px;
     border-radius: 10px;
 }
 .portfolio p {
@@ -734,16 +763,15 @@ header h2 {
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 .portfolio h3 {
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
-    margin-top: 0px;
 }
 .portfolio > div:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .portfolio a {
     text-decoration: none;
@@ -754,11 +782,12 @@ header h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding: 20px;
+    margin: 50px 0px;
   }
   .project {
     flex: 1 1 300px;
     max-width: 320px;
+    border-radius: 10% 10% 0% 0%;
   }
   .project img {
     width: 100%;
@@ -766,6 +795,27 @@ header h2 {
     object-fit: cover;
     border-radius: 8px;
   }
+  .portfolio-img-wrapper {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .portfolio-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .project {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .project:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
   @media (max-width: 768px) {
     .portfolio-section {
       padding: 10px;
@@ -1280,4 +1330,8 @@ footer a {
     footer ul {
         display: none;
     }
+    footer {
+        padding: 50px 50px 50px 50px;
+    }
+
   }
