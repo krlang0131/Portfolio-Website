@@ -226,8 +226,8 @@ h2 {
   
 h3 {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 500;
+    font-style: normal;
     font-size: clamp(1.25rem, 4vw, 1.75rem);
   }
   
@@ -894,7 +894,10 @@ header h2 {
 }
 .intro {
     width: 50%;
-
+}
+.multi-img-container {
+    display: flex;
+    flex-direction: row;
 }
 .intro img {
     width: 100%;
@@ -907,6 +910,8 @@ header h2 {
     width: 75%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 .arrow-connections {
     display: flex;
