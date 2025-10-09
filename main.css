@@ -872,7 +872,7 @@ header h2 {
     justify-content: center;
 }
 .info-container {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .info-img {
     text-align: center;
@@ -882,6 +882,9 @@ header h2 {
 }
 .border img {
     border: solid 1px black;
+}
+.center {
+    justify-content: center;
 }
 .shadow img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);}
@@ -899,6 +902,15 @@ header h2 {
     display: flex;
     flex-direction: row;
 }
+.intro-img-transparent {
+    display: flex;
+    justify-content: center;
+}
+.intro-img-transparent img {
+    width: 40%;
+    height: auto;
+
+}
 .intro img {
     width: 100%;
 }
@@ -911,7 +923,12 @@ header h2 {
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
+}
+.three_img {
+    width: 40%;
+    gap: 50px;
+    height: auto;
+    object-fit: cover;  
 }
 .arrow-connections {
     display: flex;
