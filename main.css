@@ -463,7 +463,7 @@ header h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    gap: 10px;
+    gap: 20px;
 }
 .service img {
     height: 40px;
@@ -471,6 +471,7 @@ header h2 {
 }
 .service h3 {
     color: #002147;
+    font-size: 1.25rem;
 }
 
 /* home featured section */
